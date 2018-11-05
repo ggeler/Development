@@ -21,5 +21,18 @@ public class Employee  {
 		this.lastPassChange=null;
 	}
 	Employee(){}
-	
+	public String getName() {
+		String[] parts = userid.split(" ");
+		return parts[0];
+	}
+	public void setName(String name) {
+		userid=name;
+	}
+	public String getLastName() {
+		String[] parts = userid.split(" ");
+		return parts[1];
+	}
+	public void setLastName(String name) {
+		userid=userid+" "+name;
+	}
 }
